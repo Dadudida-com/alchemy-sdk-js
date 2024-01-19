@@ -22,7 +22,7 @@ the response. Defaults to false for faster response times.
 
 #### Defined in
 
-[src/types/types.ts:953](https://github.com/alchemyplatform/alchemy-sdk-js/blob/e05babb/src/types/types.ts#L953)
+[src/types/nft-types.ts:445](https://github.com/alchemyplatform/alchemy-sdk-js/blob/6dc36f9/src/types/nft-types.ts#L445)
 
 ___
 
@@ -37,4 +37,4 @@ metadata for cache misses then set this value to 0.
 
 #### Defined in
 
-[src/types/types.ts:947](https://github.com/alchemyplatform/alchemy-sdk-js/blob/e05babb/src/types/types.ts#L947)
+[src/types/nft-types.ts:439](https://github.com/alchemyplatform/alchemy-sdk-js/blob/6dc36f9/src/types/nft-types.ts#L439)
