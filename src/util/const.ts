@@ -18,7 +18,7 @@ export function getAlchemyHttpUrl(network: Network, apiKey: string): string {
 }
 
 export function getAlchemyNftHttpUrl(network: Network, apiKey: string): string {
-  return `https://${network}.g.alchemy.com/nft/v2/${apiKey}`;
+  return `https://${network}.g.alchemy.com/nft/v3/${apiKey}`;
 }
 
 export function getAlchemyWsUrl(network: Network, apiKey: string): string {
@@ -41,24 +41,22 @@ export enum AlchemyApiType {
  */
 export const EthersNetwork = {
   [Network.ETH_MAINNET]: 'mainnet',
-  [Network.ETH_ROPSTEN]: 'ropsten',
   [Network.ETH_GOERLI]: 'goerli',
-  [Network.ETH_KOVAN]: 'kovan',
-  [Network.ETH_RINKEBY]: 'rinkeby',
   [Network.ETH_SEPOLIA]: 'sepolia',
   [Network.OPT_MAINNET]: 'optimism',
-  [Network.OPT_KOVAN]: 'optimism-kovan',
   [Network.OPT_GOERLI]: 'optimism-goerli',
+  [Network.OPT_SEPOLIA]: 'optimism-sepolia',
   [Network.ARB_MAINNET]: 'arbitrum',
-  [Network.ARB_RINKEBY]: 'arbitrum-rinkeby',
   [Network.ARB_GOERLI]: 'arbitrum-goerli',
+  [Network.ARB_SEPOLIA]: 'arbitrum-sepolia',
   [Network.MATIC_MAINNET]: 'matic',
   [Network.MATIC_MUMBAI]: 'maticmum',
   [Network.ASTAR_MAINNET]: 'astar-mainnet',
   [Network.POLYGONZKEVM_MAINNET]: 'polygonzkevm-mainnet',
   [Network.POLYGONZKEVM_TESTNET]: 'polygonzkevm-testnet',
   [Network.BASE_MAINNET]: 'base-mainnet',
-  [Network.BASE_GOERLI]: 'base-goerli'
+  [Network.BASE_GOERLI]: 'base-goerli',
+  [Network.BASE_SEPOLIA]: 'base-sepolia'
 };
 
 /**
@@ -71,6 +69,10 @@ export const CustomNetworks: { [key: string]: NetworkFromEthers } = {
     chainId: 421613,
     name: 'arbitrum-goerli'
   },
+  'arbitrum-sepolia': {
+    chainId: 421614,
+    name: 'arbitrum-sepolia'
+  },
   'astar-mainnet': {
     chainId: 592,
     name: 'astar-mainnet'
@@ -78,6 +80,10 @@ export const CustomNetworks: { [key: string]: NetworkFromEthers } = {
   sepolia: {
     chainId: 11155111,
     name: 'sepolia'
+  },
+  'optimism-sepolia': {
+    chainId: 11155420,
+    name: 'optimism-sepolia'
   },
   'polygonzkevm-mainnet': {
     chainId: 1101,
@@ -94,6 +100,10 @@ export const CustomNetworks: { [key: string]: NetworkFromEthers } = {
   'base-goerli': {
     chainId: 84531,
     name: 'base-goerli'
+  },
+  'base-sepolia': {
+    chainId: 84532,
+    name: 'base-sepolia'
   }
 };
 
